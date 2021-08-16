@@ -9,12 +9,16 @@ don't seem to detect properly the key "/" on my pt-br keyboard whenever
 I am working on the TTY. That is easy to fix, I just need to change a
 couple of values on the file responsible for the br-abnt2 layout. The
 layout can be found at
+
 > /usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
+
 which I change the *keycode 89 = slash question degree* for 
 *keycode 97 = slash question degree*.
 
 I just need to do the following to get it working nicely
+
 > cp conf.d/br-abnt2-thinkpad.map.gz -t /usr/share/kbd/keymaps/i386/qwerty
+
 > loadkeys br-abnt2-thinkpad
 
 ### 1.2 Connect with the internet
