@@ -2,6 +2,9 @@
 
 ## 1. Partitioning the disk, setting a file system and instaling its core
 
+I can do the installation procedure by the steps down below or I can use
+the installationScripts.
+
 
 
 ### 1.1 The correct keyboard layout

@@ -1,0 +1,5 @@
+# flash disk
+/dev/sdb					/media/pendrive      	auto	noauto,user,exec      	0 0
+
+# cdrom
+/dev/sr0					/media/cdrom      	auto	noauto,user,exec      	0 0

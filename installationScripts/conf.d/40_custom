@@ -1,0 +1,5 @@
+menuentry "FreeBSD 13.0" {
+	insmod part_gpt
+	set root='(hd0,5)'
+	kfreebsd /boot/loader
+}
