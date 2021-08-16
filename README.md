@@ -1,8 +1,8 @@
 # Steps to install Arch Linux on my Thinkpad T400
 
-# 1. Partitioning the disk, setting a file system and instaling its core
+## 1. Partitioning the disk, setting a file system and instaling its core
 
-## 1.1 The correct keyboard layout
+### 1.1 The correct keyboard layout
 
 Unfortunately, the standard keyboard layouts, namely br-abnt2, they
 don't seem to detect properly the key "/" on my pt-br keyboard whenever
@@ -17,13 +17,13 @@ I just need to do the following to get it working nicely
 > cp conf.d/br-abnt2-thinkpad.map.gz -t /usr/share/kbd/keymaps/i386/qwerty
 > loadkeys br-abnt2-thinkpad
 
-## 1.2 Connect with the internet
+### 1.2 Connect with the internet
 
 The command 
 > iwctl
 is quite easy to use it.
 
-## 1.3 Formatting the disk and choosing tha file system
+### 1.3 Formatting the disk and choosing tha file system
 Again, nothing difficult to do.
 > fdisk -f
 to list all disks or
@@ -40,7 +40,7 @@ Finally, it is necessary to set the file system. Piece of cake:
 > mkfs.ext4 /dev/sda2                                                              
 > mkswap /dev/sda3
 
-## 1.4 Mounting the partitions created and installing the core of the system
+### 1.4 Mounting the partitions created and installing the core of the system
 > mount /dev/sda2 /mnt
 > swapon /dev/sda3
 
@@ -56,11 +56,11 @@ without being root
 **Now i is time to play with the system**
 > arch-chroot /mnt
 
-# 2. After arch-chroot
+## 2. After arch-chroot
 Update the system
 > pacman -Syu
 
-## 2.1 Configuring the system
+### 2.1 Configuring the system
 **Region and Time**
 > ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 > hwclock --systohc
@@ -88,7 +88,7 @@ Update the system
 > chown -R rafael: /media/pendrive
 > chown -R rafael: /media/cdrom
 
-## 2.2 Installing all packages
+### 2.2 Installing all packages
 > pacman -S  grub intel-ucode os-prober
 > pacman -S  iwd dhcpcd systemd firewalld firejail
 > pacman -S  vim
@@ -112,7 +112,7 @@ Update the system
 
 
 
-## 2.3 Enabling Services
+### 2.3 Enabling Services
 
 > systemctl enable iwd
 > systemctl enable systemd-resolved
@@ -124,7 +124,7 @@ Update the system
 > cp conf.d/iwd_main.conf -t /etc/iwd/                                             
 > mv /etc/iwd/iwd_main.conf  /etc/iwd/main.conf           
 
-## 2.4 Grub for bios legacy
+### 2.4 Grub for bios legacy
 
 > grub-install --target=i386-pc /dev/sda
 > grub-mkconfig -o /boot/grub/grub.cfg
