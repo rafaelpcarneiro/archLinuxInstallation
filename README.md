@@ -49,9 +49,11 @@ In my case
 
 and then just need to set the partitions. Since I am booting using the
 Legacy system, I need to create a partition of **1MB** (if I recall it
-well) which has to have a flag of boot. The rest sda2, sda3 is as usual.
-Also, I cannot forget to set the GPT table, right at the beggining of
-this process.
+properly) with a **boot flag**. The other partitions, sda2 and sda3,
+just procedure as usual.
+
+**Important**: set the GPT table, right at the beggining of this
+process.
 
 Finally, it is necessary to set the file system. Piece of cake:
 
