@@ -33,7 +33,7 @@ The comand
 is quite easy to use it.
 
 
-### 1.3 Formatting the disk and choosing tha file system
+### 1.3 Formatting the disk and choosing the file system
 
 Again, nothing difficult to do.
 
