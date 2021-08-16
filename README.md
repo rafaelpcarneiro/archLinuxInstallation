@@ -6,8 +6,8 @@
 
 ### 1.1 The correct keyboard layout
 
-Unfortunately, the standard keyboard layouts, namely br-abnt2, they
-don't seem to detect properly the key "/" on my pt-br keyboard whenever
+Unfortunately, the standard keyboard layouts, namely br-abnt2, it
+doesn't seem to detect properly the key "/" on my pt-br keyboard whenever
 I am working on the TTY. That is easy to fix, I just need to change a
 couple of values on the file responsible for the br-abnt2 layout. The
 layout can be found at
@@ -17,7 +17,7 @@ layout can be found at
 which I change the *keycode 89 = slash question degree* for 
 *keycode 97 = slash question degree*.
 
-I just need to do the following to get it working nicely
+Then, I just need to do the following to get it working nicely
 
 > cp conf.d/br-abnt2-thinkpad.map.gz -t /usr/share/kbd/keymaps/i386/qwerty
 >
