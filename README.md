@@ -70,12 +70,12 @@ and installing the core system
 
 > pacstrap /mnt base linux linux-firmware
 
-Now the table of the partitions must be declared in a file: **fstab**
+Now the table of the partitions must be declared at the file **fstab**
 
 > genfstab -U /mnt  >> /mnt/etc/fstab                                            
 
-and I insert a place where I can mount a flash disk and the cdrom
-without being root
+which I also insert instructions allowing me to mount a flash disk and
+wthe cdrom ithout being root
 
 > cat conf.d/my_fstab >> /mnt/etc/fstab
 
