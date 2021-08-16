@@ -60,13 +60,13 @@ Finally, it is necessary to set the file system. Piece of cake:
 > mkswap /dev/sda3
 
 
-### 1.4 Mounting the partitions created and installing the core of the system
+### 1.4 Mounting the partitions created and installing the core system
 
 > mount /dev/sda2 /mnt
 >
 > swapon /dev/sda3
 
-and installing the core of the system
+and installing the core system
 
 > pacstrap /mnt base linux linux-firmware
 
