@@ -1,4 +1,4 @@
-# Steps to install Arch Linux on my old (but  gold) Thinkpad T400
+# Steps to install Arch Linux on my Thinkpad T400
 
 # 1. Partitioning the disk, setting a file system and instaling its core
 
