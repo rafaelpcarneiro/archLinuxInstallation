@@ -121,7 +121,7 @@ Update the system
 
 > passwd
 
-**Creating rafael user**
+**Creating user rafael**
 
 > useradd -m -U rafael
 >
