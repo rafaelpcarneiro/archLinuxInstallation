@@ -15,7 +15,9 @@ I am working on the TTY. That is easy to fix, I just need to change a
 couple of values on the file responsible for the br-abnt2 layout. The
 layout can be found at
 
-> /usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
+```
+/usr/share/kbd/keymaps/i386/qwerty/br-abnt2.map.gz
+```
 
 which I change the *keycode 89 = slash question degree* for 
 *keycode 97 = slash question degree*.
