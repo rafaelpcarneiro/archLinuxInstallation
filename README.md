@@ -77,7 +77,7 @@ Now the table of the partitions must be declared at the file **fstab**
 > genfstab -U /mnt  >> /mnt/etc/fstab                                            
 
 which I also insert instructions allowing me to mount a flash disk and
-wthe cdrom ithout being root
+the cdrom without being root
 
 > cat conf.d/my_fstab >> /mnt/etc/fstab
 
