@@ -18,7 +18,7 @@ which I change the *keycode 89 = slash question degree* for
 I just need to do the following to get it working nicely
 
 > cp conf.d/br-abnt2-thinkpad.map.gz -t /usr/share/kbd/keymaps/i386/qwerty
-
+>
 > loadkeys br-abnt2-thinkpad
 
 ### 1.2 Connect with the internet
