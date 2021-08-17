@@ -1,11 +1,13 @@
 # Steps to install Arch Linux on my Thinkpad T400
 
+
+Here I keep all steps necessary for me to install the Arch Linux distribution
+on my old Thinkpad T400. The README has all the procedures needed or,
+I can just simply run the scripts that I have to install and configure
+my whole system.
+
+
 ## 1. Partitioning the disk, setting a file system and instaling its core
-
-I can do the installation procedure by the steps down below or I can use
-the installationScripts.
-
-
 
 ### 1.1 The correct keyboard layout
 
